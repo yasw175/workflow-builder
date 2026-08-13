@@ -1,0 +1,20 @@
+{
+  "name": "functions",
+  "version": "1.0.0",
+  "description": "Hasura Action handlers for the AI Agent Workflow Builder",
+  "main": "index.js",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "tsx": "^4.23.12",
+    "typescript": "^5.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

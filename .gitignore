@@ -1,0 +1,25 @@
+# nhost local dev state
+.nhost/
+.secrets
+
+# node
+node_modules/
+**/node_modules/
+npm-debug.log*
+
+# next.js
+.next/
+**/.next/
+next-env.d.ts
+
+# env files - never commit real secrets
+.env
+.env.local
+.env*.local
+**/.env.local
+
+# misc
+.DS_Store
+*.log
+*.bak
+/tmp
