@@ -12,12 +12,12 @@ export default function HomePage() {
   const [userId, setUserId] = useState<string | null>(null);
 
   useEffect(() => {
-    const unsub = nhost.auth.onAuthStateChanged((event, session) => {
+    const unsubscribe = nhost.auth.onAuthStateChanged((event, session) => {
       setAuthed(!!session);
       setUserId(session?.user?.id ?? null);
       if (!session) router.push('/sign-in');
     });
-    return () => unsub.unsubscribe?.();
+    return () => unsubscribe();
   }, [router]);
 
   const { data: orgData, loading: orgLoading } = useQuery(GET_MY_ORGS, { skip: !authed });
